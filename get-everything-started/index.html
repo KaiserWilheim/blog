@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/pics/apple-touch-icon-kw.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/pics/128kw.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/pics/64kw.png">
+  <link rel="mask-icon" href="/pics/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.cn/css?family=Noto+Sans:300,300italic,400,400italic,700,700italic%7CNoto+Serif+Tangut:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.kaiserwilheim.eu.org","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="经过一番尝试，兜兜转转，终于又回到了使用 Github Pages + Hexo 的方式搭建博客。今天就通过这篇教程来教大家如何在大部分白嫖的情况下搭建属于自己的博客。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 Github Pages 和 Hexo 搭建个人博客">
+<meta property="og:url" content="https://blog.kaiserwilheim.eu.org/get-everything-started/index.html">
+<meta property="og:site_name" content="猫与重音的彼端">
+<meta property="og:description" content="经过一番尝试，兜兜转转，终于又回到了使用 Github Pages + Hexo 的方式搭建博客。今天就通过这篇教程来教大家如何在大部分白嫖的情况下搭建属于自己的博客。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/08/17/Xg7ZK1LASsY5OGT.png">
+<meta property="og:image" content="https://s2.loli.net/2022/08/17/cp7XHmASavutCkd.png">
+<meta property="og:image" content="https://s2.loli.net/2022/08/17/NYgtmsCxy7GL4jd.png">
+<meta property="og:image" content="https://s2.loli.net/2022/08/17/Z7K31sl49Dg5yox.png">
+<meta property="og:image" content="https://s2.loli.net/2022/08/17/exs6MhOcIXDClSt.png">
+<meta property="og:image" content="https://s2.loli.net/2022/08/17/WBwqDUsfIX15kg2.png">
+<meta property="og:image" content="https://s2.loli.net/2022/08/17/QdVlDTIqaARKpsr.png">
+<meta property="article:published_time" content="2022-06-18T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-08-17T13:54:52.637Z">
+<meta property="article:author" content="KaiserWilheim">
+<meta property="article:tag" content="博客">
+<meta property="article:tag" content="教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/08/17/Xg7ZK1LASsY5OGT.png">
+
+
+<link rel="canonical" href="https://blog.kaiserwilheim.eu.org/get-everything-started/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.kaiserwilheim.eu.org/get-everything-started/","path":"get-everything-started/","title":"使用 Github Pages 和 Hexo 搭建个人博客"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>使用 Github Pages 和 Hexo 搭建个人博客 | 猫与重音的彼端</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Y88Y81XL7"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-8Y88Y81XL7","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">猫与重音的彼端</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">逻辑搭建基础，变幻点燃世界</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">2</span></a></li><li class="menu-item menu-item-friends"><a href="/friends/" rel="section"><i class="fa fa-address-card fa-fw"></i>友链</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git"><span class="nav-number">1.1.</span> <span class="nav-text">git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.1.1.</span> <span class="nav-text">相关设置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NodeJS"><span class="nav-number">1.2.</span> <span class="nav-text">NodeJS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-number">1.3.</span> <span class="nav-text">Hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="nav-number">2.</span> <span class="nav-text">搭建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-number">2.1.</span> <span class="nav-text">Hexo 初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">2.2.</span> <span class="nav-text">配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2"><span class="nav-number">2.3.</span> <span class="nav-text">编辑博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%86%E5%A4%87-GitHub"><span class="nav-number">2.4.</span> <span class="nav-text">准备 GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A8%E9%80%81%E5%B9%B6%E9%83%A8%E7%BD%B2"><span class="nav-number">2.5.</span> <span class="nav-text">推送并部署</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BC%98%E5%8C%96%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6"><span class="nav-number">3.</span> <span class="nav-text">优化访问速度</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%9F%E5%90%8D"><span class="nav-number">3.1.</span> <span class="nav-text">域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cloudflare"><span class="nav-number">3.2.</span> <span class="nav-text">Cloudflare</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Netlify"><span class="nav-number">3.3.</span> <span class="nav-text">Netlify</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-number">4.</span> <span class="nav-text">结语</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="KaiserWilheim"
+      src="https://s2.loli.net/2022/03/22/7wOGBae2UblHjMI.png">
+  <p class="site-author-name" itemprop="name">KaiserWilheim</p>
+  <div class="site-description" itemprop="description">享受生活，记录生活</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0thaXNlcldpbGhlaW0=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;KaiserWilheim"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS9Aa2Fpc2Vyd2lsaGVpbQ==" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;@kaiserwilheim"><i class="fab fa-twitter fa-fw"></i>Twitter</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL0thaXNlcldpbGhlaW0=" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;KaiserWilheim"><i class="fab fa-telegram fa-fw"></i>Telegram</span>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC96aC1DTg=="><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/big/by_nc_nd.svg" alt="Creative Commons"></span>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL0thaXNlcldpbGhlaW0=" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.kaiserwilheim.eu.org/get-everything-started/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s2.loli.net/2022/03/22/7wOGBae2UblHjMI.png">
+      <meta itemprop="name" content="KaiserWilheim">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="猫与重音的彼端">
+      <meta itemprop="description" content="享受生活，记录生活">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="使用 Github Pages 和 Hexo 搭建个人博客 | 猫与重音的彼端">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          使用 Github Pages 和 Hexo 搭建个人博客
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-19 00:00:00" itemprop="dateCreated datePublished" datetime="2022-06-19T00:00:00+08:00">2022-06-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-08-17 21:54:52" itemprop="dateModified" datetime="2022-08-17T21:54:52+08:00">2022-08-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">教程</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>4172</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>4 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>经过一番尝试，兜兜转转，终于又回到了使用 Github Pages + Hexo 的方式搭建博客。今天就通过这篇教程来教大家如何<del>在大部分白嫖的情况下</del>搭建属于自己的博客。</p>
+<span id="more"></span>
+
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><ol>
+<li>Windows：<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZC93aW4=">下载并安装<i class="fa fa-external-link-alt"></i></span></li>
+<li>macOS：<span class="exturl" data-url="aHR0cHM6Ly9zb3VyY2Vmb3JnZS5uZXQvcHJvamVjdHMvZ2l0LW9zeC1pbnN0YWxsZXIv">下载并安装<i class="fa fa-external-link-alt"></i></span></li>
+<li>Linux(Debian、Ubuntu)：<code>sudo apt-get install git-core</code></li>
+<li>Linux(Fedora、RedHat、CentOS)：<code>sudo yum install git-core</code></li>
+</ol>
+<h3 id="相关设置"><a href="#相关设置" class="headerlink" title="相关设置"></a>相关设置</h3><p>安装成功后，将git与GitHub账号绑定，右键打开Git Bash，然后设置配置信息。</p>
+<p>接下来配置用户名和邮箱</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;github 用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;github 注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>接着生成ssh密钥文件，输入如下命令后直接三次回车即可，一般不需要设置密码;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;github 注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>一般执行上述命令之后，会生成id_rsa和id_rsa.pub两个文件，前者是我们私有的，而后者则是对外开放的。接着在<code>C:\Users\Administrator\.ssh</code>目录下找到生成的.ssh的文件夹中的id_rsa.pub密钥，将内容复制。</p>
+<p>然后打开<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NldHRpbmdzL2tleXM=">Gitub&#x2F;Settings&#x2F;Keys<i class="fa fa-external-link-alt"></i></span>，创建一个新的SSH key，填写Title和Key，Title可以随意，而Key的内容则是我们刚才复制的id_rsa.pub中的内容，最后点击Add SSH key即可。</p>
+<p>这样，我们就可以通过git来将我们的博客内容推送到GitHub上了。</p>
+<h2 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h2><p>Hexo需要NodeJS才能正常运作。</p>
+<p>我们只需要去官网下载最新的稳定版<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2VuLw==">NodeJS<i class="fa fa-external-link-alt"></i></span>并安装即可(安装教程可自行搜索)。</p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p><code>npm install hexo</code>即可。</p>
+<h1 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h1><p>我们给自己的博客找到一个合适的地方之后，就可以开始准备搭建博客了。</p>
+<h2 id="Hexo-初始化"><a href="#Hexo-初始化" class="headerlink" title="Hexo 初始化"></a>Hexo 初始化</h2><p>打开cmd窗口，切换到博客<del>将要</del>所在的文件夹，并执行<code>hexo init</code>。<br><img src="https://s2.loli.net/2022/08/17/Xg7ZK1LASsY5OGT.png" alt="hexo-init.png"><br>等待一段时间之后，我们博客的雏形就搭建完成了。</p>
+<p>完成之后我们的博客目录应该是这个样子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">blog</span><br><span class="line">├─.github #GitHub部署相关</span><br><span class="line">├─node_modules #组件，包括Hexo等等</span><br><span class="line">├─scaffolds #模板文件夹</span><br><span class="line">├─source #存放用户资源</span><br><span class="line">│  └─_posts</span><br><span class="line">├─themes #（前）主题文件夹</span><br><span class="line">├─_config,landscape.yml #主题配置文件</span><br><span class="line">├─_config,yml #博客配置文件</span><br><span class="line">└─package.json #npm包目录</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>博客根目录下的<code>_config.yml</code>是Hexo的配置文件。下面我将带大家过一遍<code>_config.yml</code>中有用的部分内容。</p>
+<p>首先是名为Site的一大段：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">南陽劉子驥的博客</span> <span class="comment">#博客标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">逻辑搭建基础，变幻点燃世界</span> <span class="comment">#副标题</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;&#x27;</span> <span class="comment">#网站描述</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="comment">#关键词</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">南陽劉子驥</span> <span class="string">aka</span> <span class="string">KaiserWilheim</span> <span class="comment">#博客作者</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span> <span class="comment">#博客语言，默认为en</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span> <span class="comment">#网站时区</span></span><br></pre></td></tr></table></figure>
+<p>其中<code>title</code>、<code>description</code>和<code>author</code>是用于SEO的，其余选填即可。</p>
+<p>然后是URL，其中只有叫url的选项较重要，其他的根据自己喜好即可。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://blog.kaiserwilheim.eu.org</span></span><br></pre></td></tr></table></figure>
+
+<p>这里填的是自己博客的网址，如果是用的GitHub Pages的默认<del>和唯一</del>的域名的话就是<code>username.github.io</code>。</p>
+<p>之后一大段都是没有什么太大的用处的，如果对里面的设置有要求的话（比如说主页和归档页每一页最多包含多少篇文章什么的），可以自行<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbg==">查阅 Hexo 的官方文档<i class="fa fa-external-link-alt"></i></span>。</p>
+<p>然后跳到了倒数第二段，这一段只有一个<code>theme</code>，代表着我们博客的主题，默认为Landscape。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=">这里<i class="fa fa-external-link-alt"></i></span>是Hexo所有的公开主题，支持模板网站的预览和直接导航到GitHub。</p>
+<p>我们自己找到心仪的主题了之后，将其作为一个组件通过<code>npm install</code>或者<code>git clone</code>对应的仓库来下载下来之后将这里改为对应的主题名称即可。</p>
+<p>比如说这个<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0ZlY2hpbi9oZXhvLXRoZW1lLWRpYXNwb3Jh">Diaspora<i class="fa fa-external-link-alt"></i></span>主题，我们只需要在对应位置<code>git clone https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora</code>就可以将其安装在<code>theme</code>文件夹下。</p>
+<p>注意：<strong>通过npm安装的在<code>node_modules</code>文件夹下，通过git clone安装的在<code>themes</code>文件夹下，注意冲突。</strong></p>
+<p>当然，如果我们不满足于上面任意一个主题的话，可以根据<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvdGhlbWVzLmh0bWw=">Hexo的文档<i class="fa fa-external-link-alt"></i></span>（同时也是教程）来自己编写主题。</p>
+<p>然后就来到了最后一段。<br>最后一段与我们博客的推送和部署有关。</p>
+<p>我们（上面介绍了）使用git来部署到GitHub 上，于是我们就需要安装Hexo的git部署插件，只需要<code>npm install hexo-deployer-git</code> 即可。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/username/repository</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<p>type必须是git；<br>repo就填我们将要在GitHub上部署博客的仓库地址，一般是<code>https://github.com/username/username.github.io</code>，具体原因后面会将。<br>branch就是我们将要推送到哪个分支，根据个人实际情况来填，一般是<code>master</code>。</p>
+<h2 id="编辑博客"><a href="#编辑博客" class="headerlink" title="编辑博客"></a>编辑博客</h2><p>我们博客的<code>source\_post</code>目录下面就是我们博客的所有文档了，我们通过<code>hexo new &quot;postname&quot;</code>新建的文档也在这里。</p>
+<p>如果我们想要实时预览自己到底写的怎么样的话，可以使用<code>hexo s</code>在<code>localhost:4000</code>上实时预览（并且不需要联网）</p>
+<h2 id="准备-GitHub"><a href="#准备-GitHub" class="headerlink" title="准备 GitHub"></a>准备 GitHub</h2><p>我们还需要在GitHub上进行一些操作，才能让我们的博客成功借助Github Pages的力量出现。</p>
+<p>首先你得有一个GitHub账号，没有的话请出门左转注册一个再回来继续看。</p>
+<p>我们需要新建一个仓库来盛放我们的博客。<br>根据GitHub Pages的规则，这个仓库的名字需要严格为<code>username.github.io</code>。<br>这样，GitHub将会自动给你配置GitHub Pages，省了很大一部分力气。</p>
+<p><img src="https://s2.loli.net/2022/08/17/cp7XHmASavutCkd.png" alt="github-repo.png"></p>
+<p>如果你的仓库不是叫<code>username.github.io</code>，那么GithHub Pages就会将你的博客内容放到<code>username.github.io/repo_name</code>这个地址上，但如果你跟着后面的教程设置了自己的域名的话就可以不用担心这个了。</p>
+<h2 id="推送并部署"><a href="#推送并部署" class="headerlink" title="推送并部署"></a>推送并部署</h2><p>我们在准备完了所有东西之后，就可以开始推送部署了。</p>
+<p>我们在控制台按顺序输入如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>然后等待Hexo将我们的博客内容生成好之后推送到GitHub上，然后再经由GitHub Pages部署即可。</p>
+<p>等待数分钟之后，我们就可以在<code>username.github.io</code>上看到我们崭新的博客了。</p>
+<h1 id="优化访问速度"><a href="#优化访问速度" class="headerlink" title="优化访问速度"></a>优化访问速度</h1><p>由于众所周知的原因，<code>.github.io</code>结尾的域名在国内的访问速度比较慢。我们可以使用 Cloudflare 对其进行优化。</p>
+<p>如果你有财力的话，可以去购买一个国内服务商的域名，并使用其服务，这样会快很多。</p>
+<p>笔者没有什么财力，所以只能考虑<del>白嫖</del>免费获取域名。</p>
+<h2 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h2><p>现在白嫖域名的方法有下面几种，我在这里分析一下利弊：</p>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuZnJlZW5vbS5jb20vemgvaW5kZXguaHRtbD9sYW5nPXpo">freenom<i class="fa fa-external-link-alt"></i></span><br>  主流，支持五种域名，功能强大，只不过需要定期续订。</li>
+<li>eu.org<br>  可以长期持有，但是国内无法访问，且服务速度超级慢，基本上就是随缘。</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9uaWUuc3UvYXJjaGl2ZXMvMjIxMC5odG1s">pp.ua<i class="fa fa-external-link-alt"></i></span><br>  国内（应该）可以访问，也需要定期续订，只不过需要绑定银行卡。</li>
+</ul>
+<p>我这里用的是eu.org和freenom的.cf。</p>
+<p>国内的域名服务商需要你实名认证，对于一些人（比如寄宿制学校的学生）来说可能会很麻烦。</p>
+<p>一些比较便宜的域名，比如说.su和.ru什么的可以买<span class="exturl" data-url="aHR0cHM6Ly93d3cubmljLnJ1L2NhdGFsb2cvZG9tYWlucy8=">这里<i class="fa fa-external-link-alt"></i></span>的域名，只不过需要使用能够支付卢布的支付方式。</p>
+<p>我们按照下面的图打开 pages 页面，并在对应的地方填上域名。</p>
+<p><img src="https://s2.loli.net/2022/08/17/NYgtmsCxy7GL4jd.png" alt="repo-pages.png"></p>
+<p>然后，GitHub会自动生成一个CNAME文件，不要忘了在自己的本地文件中加上这个文件，否则GitHub的自动导航会失效。</p>
+<h2 id="Cloudflare"><a href="#Cloudflare" class="headerlink" title="Cloudflare"></a>Cloudflare</h2><p>虽然仍然没有国内服务器，但Cloudflare的访问速度比纯GitHub Pages要快得多。</p>
+<p>我们首先需要<span class="exturl" data-url="aHR0cHM6Ly9kYXNoLmNsb3VkZmxhcmUuY29tL3NpZ24tdXA=">注册一个Cloudflare账号<i class="fa fa-external-link-alt"></i></span>。</p>
+<p>登录之后点击右上角的“添加站点”，在下图中的框里面填上你的域名。</p>
+<p><img src="https://s2.loli.net/2022/08/17/Z7K31sl49Dg5yox.png" alt="cloudflare.png"></p>
+<p>之后打开DNS窗口，向你的域名中添加一个CNAME记录，就像这样：</p>
+<p><img src="https://s2.loli.net/2022/08/17/exs6MhOcIXDClSt.png" alt="cname.png"></p>
+<p>此时你就不需要你GitHub仓库中你的那个CNAME文件了，而且还可以同时访问.github.io和.cf两个域名。</p>
+<p>然后我们将域名的运营商（比如freenom）那里的NS记录改为上一个窗口下面的那两个cloudflare nameserver的地址即可。</p>
+<h2 id="Netlify"><a href="#Netlify" class="headerlink" title="Netlify"></a>Netlify</h2><p>我们还可以有另外一个选择，就是使用Netlify来进行部署和运营。</p>
+<p>首先我们需要<span class="exturl" data-url="aHR0cHM6Ly9hcHAubmV0bGlmeS5jb20v">注册一个Netlify账号<i class="fa fa-external-link-alt"></i></span>。</p>
+<p>然后我们创建一个团队，选择免费套餐。</p>
+<p>之后我们需要新建一个站点，并允许netlify访问我们的GitHub仓库来部署我们的博客。</p>
+<p><img src="https://s2.loli.net/2022/08/17/WBwqDUsfIX15kg2.png" alt="netlify.png"></p>
+<p>然后我们点开我们的Domain settings，点击Add domain ailas，填入自己的域名。</p>
+<p><img src="https://s2.loli.net/2022/08/17/QdVlDTIqaARKpsr.png" alt="netlify-ailas.png"></p>
+<p>之后在cloudflare里面将CNAME记录改为指向<code>apex-loadbalancer.netlify.com</code>，netlify就会帮我们自动导航。</p>
+<p>netlify支持一个网站使用多个域名，且只需要将CNAME记录指向<code>apex-loadbalancer.netlify.com</code>即可，操作十分简单。</p>
+<hr>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>其实除了Hexo之外，还有Jerkyll、Gridea等等其他工具可以搭建博客，其中Gridea甚至是可视化的。</p>
+<p>除了GitHub Pages和Netlify之外还有很多地方可以托管博客，比如说Vercel什么的。</p>
+<p>博客什么的，最重要的其实还是内容，其他的花里胡哨的东西都不重要。</p>
+<p>最后，感谢您的观看。<br>如果有什么问题可以在Telegram上问我。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>KaiserWilheim
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.kaiserwilheim.eu.org/get-everything-started/" title="使用 Github Pages 和 Hexo 搭建个人博客">https://blog.kaiserwilheim.eu.org/get-everything-started/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC96aC1DTg=="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-ND</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+              <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"># 教程</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/tour-GBA/" rel="next" title="大湾区游记">
+                  大湾区游记 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">KaiserWilheim</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">0.9 万</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">8 分钟</span>
+  </span>
+</div>
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"all","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.1/es5/tex-mml-chtml.js","integrity":"sha256-hlC2uSQYTmPsrzGZTEQEg9PZ1a/+SV6VBCTclohf2og="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script src="https://unpkg.com/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '64px',
+  right: 'unset',
+  left: '32px',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.7.2/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"KaiserWilheim","repo":"Blog-Gitalk","client_id":"3e37bb1d7df7fd5db91f","client_secret":"c23d4e5da80a5bc983c11ce4de5161b218b394c8","admin_user":"KaiserWilheim","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.7.2/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"003da835c477ac209de99bda8eebe489"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>
