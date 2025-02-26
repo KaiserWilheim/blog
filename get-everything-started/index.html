@@ -17,15 +17,16 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.kaiserwilheim.eu.org","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.kayoko.moe","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="经过一番尝试，兜兜转转，终于又回到了使用 Github Pages + Hexo 的方式搭建博客。今天就通过这篇教程来教大家如何在大部分白嫖的情况下搭建属于自己的博客。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用 Github Pages 和 Hexo 搭建个人博客">
-<meta property="og:url" content="https://blog.kaiserwilheim.eu.org/get-everything-started/index.html">
+<meta property="og:url" content="https://blog.kayoko.moe/get-everything-started/index.html">
 <meta property="og:site_name" content="猫与重音的彼端">
 <meta property="og:description" content="经过一番尝试，兜兜转转，终于又回到了使用 Github Pages + Hexo 的方式搭建博客。今天就通过这篇教程来教大家如何在大部分白嫖的情况下搭建属于自己的博客。">
 <meta property="og:locale" content="zh_CN">
@@ -45,11 +46,11 @@
 <meta name="twitter:image" content="https://s2.loli.net/2022/08/17/Xg7ZK1LASsY5OGT.png">
 
 
-<link rel="canonical" href="https://blog.kaiserwilheim.eu.org/get-everything-started/">
+<link rel="canonical" href="https://blog.kayoko.moe/get-everything-started/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.kaiserwilheim.eu.org/get-everything-started/","path":"get-everything-started/","title":"使用 Github Pages 和 Hexo 搭建个人博客"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.kayoko.moe/get-everything-started/","path":"get-everything-started/","title":"使用 Github Pages 和 Hexo 搭建个人博客"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>使用 Github Pages 和 Hexo 搭建个人博客 | 猫与重音的彼端</title>
@@ -101,7 +102,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">2</span></a></li><li class="menu-item menu-item-friends"><a href="/friends/" rel="section"><i class="fa fa-address-card fa-fw"></i>友链</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">3</span></a></li><li class="menu-item menu-item-friends"><a href="/friends/" rel="section"><i class="fa fa-address-card fa-fw"></i>友链</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -173,7 +174,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -240,7 +241,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.kaiserwilheim.eu.org/get-everything-started/">
+    <link itemprop="mainEntityOfPage" href="https://blog.kayoko.moe/get-everything-started/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://s2.loli.net/2022/03/22/7wOGBae2UblHjMI.png">
@@ -336,7 +337,7 @@
 <p>我们只需要去官网下载最新的稳定版<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2VuLw==">NodeJS<i class="fa fa-external-link-alt"></i></span>并安装即可(安装教程可自行搜索)。</p>
 <h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p><code>npm install hexo</code>即可。</p>
 <h1 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h1><p>我们给自己的博客找到一个合适的地方之后，就可以开始准备搭建博客了。</p>
-<h2 id="Hexo-初始化"><a href="#Hexo-初始化" class="headerlink" title="Hexo 初始化"></a>Hexo 初始化</h2><p>打开cmd窗口，切换到博客<del>将要</del>所在的文件夹，并执行<code>hexo init</code>。<br><img src="https://s2.loli.net/2022/08/17/Xg7ZK1LASsY5OGT.png" alt="hexo-init.png"><br>等待一段时间之后，我们博客的雏形就搭建完成了。</p>
+<h2 id="Hexo-初始化"><a href="#Hexo-初始化" class="headerlink" title="Hexo 初始化"></a>Hexo 初始化</h2><p>打开cmd窗口，切换到博客<del>将要</del>所在的文件夹，并执行<code>hexo init</code>。<br><img data-src="https://s2.loli.net/2022/08/17/Xg7ZK1LASsY5OGT.png" alt="hexo-init.png"><br>等待一段时间之后，我们博客的雏形就搭建完成了。</p>
 <p>完成之后我们的博客目录应该是这个样子：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">blog</span><br><span class="line">├─.github #GitHub部署相关</span><br><span class="line">├─node_modules #组件，包括Hexo等等</span><br><span class="line">├─scaffolds #模板文件夹</span><br><span class="line">├─source #存放用户资源</span><br><span class="line">│  └─_posts</span><br><span class="line">├─themes #（前）主题文件夹</span><br><span class="line">├─_config,landscape.yml #主题配置文件</span><br><span class="line">├─_config,yml #博客配置文件</span><br><span class="line">└─package.json #npm包目录</span><br></pre></td></tr></table></figure>
 
@@ -365,7 +366,7 @@
 <h2 id="准备-GitHub"><a href="#准备-GitHub" class="headerlink" title="准备 GitHub"></a>准备 GitHub</h2><p>我们还需要在GitHub上进行一些操作，才能让我们的博客成功借助Github Pages的力量出现。</p>
 <p>首先你得有一个GitHub账号，没有的话请出门左转注册一个再回来继续看。</p>
 <p>我们需要新建一个仓库来盛放我们的博客。<br>根据GitHub Pages的规则，这个仓库的名字需要严格为<code>username.github.io</code>。<br>这样，GitHub将会自动给你配置GitHub Pages，省了很大一部分力气。</p>
-<p><img src="https://s2.loli.net/2022/08/17/cp7XHmASavutCkd.png" alt="github-repo.png"></p>
+<p><img data-src="https://s2.loli.net/2022/08/17/cp7XHmASavutCkd.png" alt="github-repo.png"></p>
 <p>如果你的仓库不是叫<code>username.github.io</code>，那么GithHub Pages就会将你的博客内容放到<code>username.github.io/repo_name</code>这个地址上，但如果你跟着后面的教程设置了自己的域名的话就可以不用担心这个了。</p>
 <h2 id="推送并部署"><a href="#推送并部署" class="headerlink" title="推送并部署"></a>推送并部署</h2><p>我们在准备完了所有东西之后，就可以开始推送部署了。</p>
 <p>我们在控制台按顺序输入如下命令：</p>
@@ -386,23 +387,23 @@
 <p>国内的域名服务商需要你实名认证，对于一些人（比如寄宿制学校的学生）来说可能会很麻烦。</p>
 <p>一些比较便宜的域名，比如说.su和.ru什么的可以买<span class="exturl" data-url="aHR0cHM6Ly93d3cubmljLnJ1L2NhdGFsb2cvZG9tYWlucy8=">这里<i class="fa fa-external-link-alt"></i></span>的域名，只不过需要使用能够支付卢布的支付方式。</p>
 <p>我们按照下面的图打开 pages 页面，并在对应的地方填上域名。</p>
-<p><img src="https://s2.loli.net/2022/08/17/NYgtmsCxy7GL4jd.png" alt="repo-pages.png"></p>
+<p><img data-src="https://s2.loli.net/2022/08/17/NYgtmsCxy7GL4jd.png" alt="repo-pages.png"></p>
 <p>然后，GitHub会自动生成一个CNAME文件，不要忘了在自己的本地文件中加上这个文件，否则GitHub的自动导航会失效。</p>
 <h2 id="Cloudflare"><a href="#Cloudflare" class="headerlink" title="Cloudflare"></a>Cloudflare</h2><p>虽然仍然没有国内服务器，但Cloudflare的访问速度比纯GitHub Pages要快得多。</p>
 <p>我们首先需要<span class="exturl" data-url="aHR0cHM6Ly9kYXNoLmNsb3VkZmxhcmUuY29tL3NpZ24tdXA=">注册一个Cloudflare账号<i class="fa fa-external-link-alt"></i></span>。</p>
 <p>登录之后点击右上角的“添加站点”，在下图中的框里面填上你的域名。</p>
-<p><img src="https://s2.loli.net/2022/08/17/Z7K31sl49Dg5yox.png" alt="cloudflare.png"></p>
+<p><img data-src="https://s2.loli.net/2022/08/17/Z7K31sl49Dg5yox.png" alt="cloudflare.png"></p>
 <p>之后打开DNS窗口，向你的域名中添加一个CNAME记录，就像这样：</p>
-<p><img src="https://s2.loli.net/2022/08/17/exs6MhOcIXDClSt.png" alt="cname.png"></p>
+<p><img data-src="https://s2.loli.net/2022/08/17/exs6MhOcIXDClSt.png" alt="cname.png"></p>
 <p>此时你就不需要你GitHub仓库中你的那个CNAME文件了，而且还可以同时访问.github.io和.cf两个域名。</p>
 <p>然后我们将域名的运营商（比如freenom）那里的NS记录改为上一个窗口下面的那两个cloudflare nameserver的地址即可。</p>
 <h2 id="Netlify"><a href="#Netlify" class="headerlink" title="Netlify"></a>Netlify</h2><p>我们还可以有另外一个选择，就是使用Netlify来进行部署和运营。</p>
 <p>首先我们需要<span class="exturl" data-url="aHR0cHM6Ly9hcHAubmV0bGlmeS5jb20v">注册一个Netlify账号<i class="fa fa-external-link-alt"></i></span>。</p>
 <p>然后我们创建一个团队，选择免费套餐。</p>
 <p>之后我们需要新建一个站点，并允许netlify访问我们的GitHub仓库来部署我们的博客。</p>
-<p><img src="https://s2.loli.net/2022/08/17/WBwqDUsfIX15kg2.png" alt="netlify.png"></p>
+<p><img data-src="https://s2.loli.net/2022/08/17/WBwqDUsfIX15kg2.png" alt="netlify.png"></p>
 <p>然后我们点开我们的Domain settings，点击Add domain ailas，填入自己的域名。</p>
-<p><img src="https://s2.loli.net/2022/08/17/QdVlDTIqaARKpsr.png" alt="netlify-ailas.png"></p>
+<p><img data-src="https://s2.loli.net/2022/08/17/QdVlDTIqaARKpsr.png" alt="netlify-ailas.png"></p>
 <p>之后在cloudflare里面将CNAME记录改为指向<code>apex-loadbalancer.netlify.com</code>，netlify就会帮我们自动导航。</p>
 <p>netlify支持一个网站使用多个域名，且只需要将CNAME记录指向<code>apex-loadbalancer.netlify.com</code>即可，操作十分简单。</p>
 <hr>
@@ -427,7 +428,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://blog.kaiserwilheim.eu.org/get-everything-started/" title="使用 Github Pages 和 Hexo 搭建个人博客">https://blog.kaiserwilheim.eu.org/get-everything-started/</a>
+      <a href="https://blog.kayoko.moe/get-everything-started/" title="使用 Github Pages 和 Hexo 搭建个人博客">https://blog.kayoko.moe/get-everything-started/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC96aC1DTg=="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-ND</span> 许可协议。转载请注明出处！
@@ -482,14 +483,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">0.9 万</span>
+    <span title="站点总字数">2.5 万</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">8 分钟</span>
+    <span title="站点阅读时长">23 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
@@ -500,7 +501,9 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
@@ -510,6 +513,7 @@
 
 
 
+  <script src="/js/third-party/fancybox.js"></script>
 
   <script src="/js/third-party/pace.js"></script>
 
